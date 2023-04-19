@@ -35,3 +35,6 @@ async def update_posts_using_df(posts: List[Post]):
     """
     new_posts_df = pd.DataFrame([post.dict() for post in posts])
     bq.update_posts_using_df(new_posts_df)
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
