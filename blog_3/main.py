@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from typing import List
-from bigquery.bq_reduced import BigQuery
+from bq import BigQuery
 import pandas as pd
 from models import Post
 
